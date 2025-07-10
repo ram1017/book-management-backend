@@ -11,13 +11,13 @@ public class CorsConfig {
     @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
-
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                         .allowedOrigins(
                                 "http://localhost:3000",
-                                "https://book-management-app-mu.vercel.app"
+                                "https://book-management-app-mu.vercel.app",
+                                "https://book-management-mbynhj0aa-ramsm2002-9741s-projects.vercel.app"
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
@@ -26,3 +26,4 @@ public class CorsConfig {
         };
     }
 }
+
