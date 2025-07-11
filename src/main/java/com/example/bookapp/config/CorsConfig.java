@@ -17,7 +17,8 @@ public class CorsConfig {
                         .allowedOrigins(
                                 "http://localhost:3000",
                                 "https://book-management-app-mu.vercel.app",
-                                "https://book-management-mbynhj0aa-ramsm2002-9741s-projects.vercel.app"
+                                "https://book-management-frontend-yng9-9uhry8wqz.vercel.app",
+                                "https://book-management-app-git-master-ramsm2002-9741s-projects.vercel.app"
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
